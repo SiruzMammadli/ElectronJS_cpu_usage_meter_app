@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Info App</title>
+  <link rel="stylesheet" href="./styles/main-screen.css">
+  <script defer type="module" src="./main-renderer.js"></script>
+</head>
+<body>
+  <nav class="main_nav">
+    <div class="left_nav">
+      <span class="nav_icon hamburger">&#x2630;</span>
+    </div>
+    <div class="right_nav">
+      <span class="nav_icon minus" id="minimize">&minus;</span>
+      <span class="nav_icon close" id="close_app">&#10006;</span>
+    </div>
+  </nav>
+  <section class="main_body">
+    <h1 class="header_title">CPU Overview</h1>
+    <div class="cpu_used_container">
+      <h4 id="used_cpu">25.4%</h4>
+    </div>
+    <div class="outer_bar">
+      <div id="inner_bar"></div>
+    </div>
+  </section>
+</body>
+</html>
